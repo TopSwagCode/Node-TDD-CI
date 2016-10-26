@@ -91,7 +91,7 @@ Test:
 * Create more realistic app with Express.
 * Add some images / gifs for showcasing project.
 
-Have any great ideas for stuff this project could contain?
+Have any great ideas for stuff this project could contain? \s
 Just mail me at josh@topswagcode.com
 Until next time, stay swag!
 
