@@ -153,7 +153,7 @@ Test
 * coveralls.io // Online test coverage reports. https://coveralls.io/
 
 # Roadmap
-* Add more CI services eg. Jenkins, https://dockbit.com/
+* Add more CI services eg. Jenkins, https://dockbit.com/, https://codeship.com/, https://gitlab.com/
 * Add dockerfile.
 * Automatic deployments to Azure / AWS / Google App Engine.
 * Create more realistic app with Express.
