@@ -1,4 +1,8 @@
+Travis CI:
 [![Build Status](https://travis-ci.org/kiksen1987/Node-TDD-CI.svg?branch=master)](https://travis-ci.org/kiksen1987/Node-TDD-CI)
+
+Circle CI:
+[![CircleCI](https://circleci.com/gh/kiksen1987/Node-TDD-CI.svg?style=svg)](https://circleci.com/gh/kiksen1987/Node-TDD-CI)
 
 A simple template project for getting started with TDD and CI.
 For starters I will be using Travis CI and Circle CI as build servers, showing some simple builds.
