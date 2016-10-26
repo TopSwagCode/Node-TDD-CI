@@ -29,7 +29,24 @@ Creating coverage report for all tests in the tests folder
 $ istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 ~~~
 
-This project uses:
+Circle CI:
+
+Circle CI setup is minimal. It has great support for Node.js out of the box. Only thing needed to get tests up and running is installing the test dependencies. Circle CI uses package.json down install all dependencies. It can even be overwritten to install dev dependencies. It also has support for running Node.js tests, if these are described in the package.json. I was able to get Circle CI up and running within a few minutes.
+
+My minimal setup for running on Circle CI was simply to create a circle.yml file and adding the following lines: 
+
+~~~yml
+machine:
+  pre:
+    - npm install --global mocha
+    - npm install -g istanbul
+~~~
+
+Travis CI:
+
+Snap CI:
+
+## Project content
 
 CI:
 * Circle CI https://circleci.com/
