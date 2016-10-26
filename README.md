@@ -68,7 +68,9 @@ script:
 
 ### Snap CI
 
-## Project content
+Snap CI is unlike the two previous. It has only a graphical user interface. No YML nonesense. Simply create stages of commands, which will be your building steps. One cool feature is the options to add manual steps. I haven't tried this, but can see some opportunities. Eg. approving deployments to live setup and other cool stuff. 
+
+# Project content
 
 CI:
 * Circle CI https://circleci.com/
@@ -81,17 +83,18 @@ Test:
 * Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
 * Looking into https://coveralls.io/ (Mostly just for the badge on github page.)
 
-Roadmap:
+
+# Roadmap
 * Add more CI services eg. Jenkins, https://dockbit.com/
 * Add dockerfile.
 * Automatic deployments to Azure / AWS / Google App Engine.
 * Create more realistic app with Express.
+* Add some images / gifs for showcasing project.
 
 Have any great ideas for stuff this project could contain?
 Just mail me at josh@topswagcode.com
 Until next time, stay swag!
 
-
 Extra swag:
-gifs created using: http://screentogif.codeplex.com/
+gifs will be created using: http://screentogif.codeplex.com/
 All code written in: https://code.visualstudio.com/ 
