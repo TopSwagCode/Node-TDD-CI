@@ -18,4 +18,6 @@ Suminator.prototype.getSumTimesTwo = function(a, b) {
   return sum * 2;
 };
 
+// Invalid Javascript 
+numver = asde;
 module.exports = Suminator;
