@@ -23,11 +23,14 @@ This project uses:
 CI:
 * Circle CI
 * Travis CI
+* Snap CI
 
 Test:
 * Mocha // Test framework https://mochajs.org
 * Chai // Syntax / style
 * Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
+* Looking into https://coveralls.io/
+
 
 Getting started:
 * npm install --global mocha
@@ -37,7 +40,7 @@ Getting started:
 You could offcourse add these to your own project.
 
 Roadmap:
-* Add more CI services eg. Jenkins.
+* Add more CI services eg. Jenkins, https://dockbit.com/
 * Add dockerfile.
 * Automatic deployments to Azure / AWS / Google App Engine.
 * Create more realistic app with Express.
@@ -45,3 +48,8 @@ Roadmap:
 Have any great ideas for stuff this project could contain?
 Just mail me at josh@topswagcode.com
 Until next time, stay swag!
+
+
+Extra swag:
+gifs created using: http://screentogif.codeplex.com/
+All code written in: https://code.visualstudio.com/ 
