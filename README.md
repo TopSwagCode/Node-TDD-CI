@@ -74,6 +74,27 @@ assert.property(tea, 'flavors');
 assert.lengthOf(tea.flavors, 3);
 ~~~
 
+## Test Coverage
+
+As stated before we can run istanbul for generating local test coverage reports. Something even more awesome is we can also share it online by using coveralls.io.
+To get it up and running. add a new task withing the scripts section in package.json  
+It should look similar to this:
+~~~json
+"scripts": {
+    "test": "mocha test --recursive",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  }
+~~~
+
+Only thing left is to pick one of the Continuous Integration services for running and creating test coverage report.  
+In this template I have choosen to go with Travic CI. For generating the report, I have added npm run-script coveralls tasks in my script sections within .travis.yml
+
+~~~yml
+script:
+  - npm test
+  - npm run-script coveralls
+~~~
+
 ## Continuous Integration
 
 ### Circle CI
@@ -110,7 +131,8 @@ install:
   - npm install
 
 script:
-  - mocha tests --recursive
+  - npm test
+  - npm run-script coveralls
 ~~~
 
 ### Snap CI
