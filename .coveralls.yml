@@ -1,0 +1,2 @@
+service_name: $service_name
+repo_token: $repo_token
