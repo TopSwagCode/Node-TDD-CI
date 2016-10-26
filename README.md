@@ -1,3 +1,5 @@
+# Node.js - Test Driven Development - Continuous Integration
+
 Travis CI:
 [![Build Status](https://travis-ci.org/kiksen1987/Node-TDD-CI.svg?branch=master)](https://travis-ci.org/kiksen1987/Node-TDD-CI)
 
@@ -21,18 +23,19 @@ Creating coverage report for all tests in tests folder
 This project uses:
 
 CI:
-* Circle CI
-* Travis CI
-* Snap CI
+* Circle CI https://circleci.com/
+* Travis CI https://travis-ci.org/ 
+* Snap CI https://snap-ci.com/
 
 Test:
 * Mocha // Test framework https://mochajs.org
-* Chai // Syntax / style
+* Chai // Syntax / style http://chaijs.com/
 * Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
-* Looking into https://coveralls.io/
+* Looking into https://coveralls.io/ (Mostly just for the badge on github page.)
 
 
-Getting started:
+### Getting started
+
 * npm install --global mocha
 * npm install -g istanbul
 * npm install
