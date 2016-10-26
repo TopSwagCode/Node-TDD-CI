@@ -1,0 +1,4 @@
+machine:
+  pre:
+    - npm install --global mocha
+    - npm install -g istanbul
