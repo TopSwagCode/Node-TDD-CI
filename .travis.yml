@@ -14,5 +14,5 @@ install:
   - npm install
 
 script:
-  - npm tests --recursive
-  - npm coveralls
+  - npm test
+  - npm run-script coveralls
