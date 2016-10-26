@@ -29,9 +29,9 @@ Creating coverage report for all tests in the tests folder
 $ istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 ~~~
 
-### Circle CI:
+### Circle CI
 
-Circle CI setup is minimal. It has great support for Node.js out of the box. Only thing needed to get tests up and running is installing the test dependencies. Circle CI uses package.json down install all dependencies. It can even be overwritten to install dev dependencies. It also has support for running Node.js tests, if these are described in the package.json. I was able to get Circle CI up and running within a few minutes.
+Circle CI setup is minimal. It has great support for Node.js out of the box. Only thing needed to get tests up and running is installing the test dependencies. Circle CI uses package.json down install all dependencies. It can even be overwritten to install dev dependencies. It also has support for running Node.js tests, if these are described in the package.json. I was able to get Circle CI up and running within a few minutes. It also seems Circle CI has support for skipping YML file and just typing every command on their website. Didn't try out this feature.
 
 My minimal setup for running on Circle CI was simply to create a circle.yml file and adding the following lines: 
 
@@ -42,9 +42,31 @@ machine:
     - npm install -g istanbul
 ~~~
 
-Travis CI:
+### Travis CI
 
-Snap CI:
+Travis is very similar to Circle CI. It also requires a YML file (.travis.yml) to get up and running. We have to specify in the YML we will be using Node.js and what version. Travis CI doesn't look at package.json. The result of this, is we have to have a few extra steps for installing dependencies and running tests. I simply added 3 statements in "install" part and added my test runner in "script" part. See my .travis.yml below: 
+
+~~~yml
+language: node_js
+
+node_js:
+  - "5"
+
+sudo: true
+
+env:
+  - CI=true
+
+install:
+  - npm install --global mocha
+  - npm install -g istanbul
+  - npm install
+
+script:
+  - mocha tests --recursive
+~~~
+
+### Snap CI
 
 ## Project content
 
