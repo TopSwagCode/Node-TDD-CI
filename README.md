@@ -3,14 +3,10 @@ For starters I will be using Travis CI and Circle CI as build servers, showing s
 Just cause our Test are running smooth the build servers might still find javascript errors / invalid javascripts.
 Eg : instead of a ;
 
-
 Simple way of running the test and coverage:
 
 * mocha tests --recursive --watch
 * istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive
-
-this will run all the tests and keep watch if anyfiles are changed. If so it will rerun the test for quick feedback loops.
-
 
 This project uses:
 
@@ -19,7 +15,16 @@ CI:
 * Travis CI
 
 Test:
-* mocha // Test framework https://mochajs.org
-* chai // Syntax / style
-* istanbul // Test coverage reports https://www.npmjs.com/package/istanbul
+* Mocha // Test framework https://mochajs.org
+* Chai // Syntax / style
+* Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul
 
+
+Roadmap:
+* Add more CI services eg. Jenkins.
+* Add dockerfile.
+* Automatic deployments to Azure / AWS / Google App Engine.
+* Create more realistic app with Express.
+
+Have any great ideas for stuff this project could contain?
+Just mail me at josh@topswagcode.com
