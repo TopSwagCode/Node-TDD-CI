@@ -4,8 +4,10 @@ Just cause our Test are running smooth the build servers might still find javasc
 Eg : instead of a ;
 
 
-Simple way of running the test:
-mocha tests --recursive --watch
+Simple way of running the test and coverage:
+
+* mocha tests --recursive --watch
+* istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive
 
 this will run all the tests and keep watch if anyfiles are changed. If so it will rerun the test for quick feedback loops.
 
@@ -13,11 +15,11 @@ this will run all the tests and keep watch if anyfiles are changed. If so it wil
 This project uses:
 
 CI:
-Circle CI
-Travis CI
+* Circle CI
+* Travis CI
 
 Test:
-mocha // Test framework https://mochajs.org
-chai // Syntax / style
-istanbul // Test coverage reports https://www.npmjs.com/package/istanbul
+* mocha // Test framework https://mochajs.org
+* chai // Syntax / style
+* istanbul // Test coverage reports https://www.npmjs.com/package/istanbul
 
