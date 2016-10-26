@@ -95,8 +95,5 @@ Just mail me at josh@topswagcode.com
 Until next time, stay swag!
 
 ### Extra swag  
-gifs will be created using:   
-http://screentogif.codeplex.com/
-
 All code written in:  
 https://code.visualstudio.com/ 
