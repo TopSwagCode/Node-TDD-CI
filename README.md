@@ -31,6 +31,40 @@ Creating coverage report for all tests in the tests folder
 $ istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 ~~~
 
+## Testing
+We have seen now we can run tests, recursively while keeping watch on them. Now it's time to create some new tests. ChaiJS has 3 styles / flavours out of the box. These 3 are: Should, Expect and Assert. Pick whatever you like the best or whatever makes the most sense your project. For quick overview see the three examples below (Examples taken from ChaiJS own homepage). For more in depth examples goto tests folder and see examples I've made.
+
+### Should
+~~~javascript
+chai.should();
+
+foo.should.be.a('string');
+foo.should.equal('bar');
+foo.should.have.length(3);
+tea.should.have.property('flavors').with.length(3);
+~~~
+
+### Expect
+~~~javascript
+var expect = chai.expect;
+
+expect(foo).to.be.a('string');
+expect(foo).to.equal('bar');
+expect(foo).to.have.length(3);
+expect(tea).to.have.property('flavors').with.length(3);
+~~~
+
+### Assert
+~~~javascript
+var assert = chai.assert;
+
+assert.typeOf(foo, 'string');
+assert.equal(foo, 'bar');
+assert.lengthOf(foo, 3)
+assert.property(tea, 'flavors');
+assert.lengthOf(tea.flavors, 3);
+~~~
+
 ## Continuous Integration
 
 ### Circle CI

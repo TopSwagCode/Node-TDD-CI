@@ -1,3 +1,12 @@
+/*
+    Test using Mocha with Chai.
+    Style using chai Assert eg:
+        assert.typeOf(foo, 'string');
+        assert.equal(foo, 'bar');
+        assert.lengthOf(foo, 3)
+        assert.property(tea, 'flavors');
+        assert.lengthOf(tea.flavors, 3);
+*/
 var assert = require('assert');
 var Suminator = require('../libs/suminator');
 var suminator = new Suminator();
