@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - "5"
+
+sudo: true
+
+env:
+  - CI=true
+
+install:
+  - npm install --global mocha
+  - npm install -g istanbul
+  - npm install
+
+script:
+  - ./build.sh
+  - mocha tests --recursive
