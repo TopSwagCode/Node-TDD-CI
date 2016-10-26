@@ -17,7 +17,14 @@ CI:
 Test:
 * Mocha // Test framework https://mochajs.org
 * Chai // Syntax / style
-* Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul
+* Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
+
+Getting started:
+* npm install --global mocha
+* npm install -g istanbul
+* npm install
+
+You could offcourse add these to your own project.
 
 
 Roadmap:

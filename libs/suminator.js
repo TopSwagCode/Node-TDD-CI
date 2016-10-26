@@ -10,6 +10,11 @@ Suminator.prototype.getSumPlusOne = function(a, b) {
 
 Suminator.prototype.getSumTimesTwo = function(a, b) {
   var sum = a + b;
+
+  if(sum > 100){
+    return 0;
+  }
+
   return sum * 2;
 };
 
