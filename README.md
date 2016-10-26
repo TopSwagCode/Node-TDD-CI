@@ -3,10 +3,11 @@ For starters I will be using Travis CI and Circle CI as build servers, showing s
 Just cause our Test are running smooth the build servers might still find javascript errors / invalid javascripts.
 Eg : instead of a ;
 
-Simple way of running the test and coverage:
-
+Running all the tests in tests folder and keep watching them 
 * mocha tests --recursive --watch
-* istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive
+
+Creating coverage report for all tests in tests folder
+* istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 
 This project uses:
 
@@ -25,7 +26,6 @@ Getting started:
 * npm install
 
 You could offcourse add these to your own project.
-
 
 Roadmap:
 * Add more CI services eg. Jenkins.
