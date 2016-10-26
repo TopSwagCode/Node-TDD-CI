@@ -9,9 +9,11 @@ This  template will be using a wide of Continuous Integration services and test 
 
 I have created this template for mainly new Node developers, to get a quick overview of some of the most used and up to date options. While also includeing some base samples for getting it up and running. 
 
+This is not a guide of how to do Test Driven Development. Rather a template to enableing Test Driven Developemt. By showing how to continuously run test while writeing code or new tests. This template also contains a few different styles for writting tests. Well enough jibber jabber. Lets get started.
+
 ## Getting started
 
-To get started simply install mocha and istanbul like so:
+To get started and run example test code, simply install mocha and istanbul like so:
 
 ~~~
 $ npm install --global mocha
@@ -28,6 +30,8 @@ Creating coverage report for all tests in the tests folder
 ~~~
 $ istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 ~~~
+
+## Continuous Integration
 
 ### Circle CI
 
@@ -89,6 +93,7 @@ Test
 * Create more realistic app with Express.
 * Add some images / gifs for showcasing project.
 * Looking into https://coveralls.io/ (Mostly just for the badge on github page.)
+* One button deploy. (Eg. from other repo)
 
 Have any great ideas for stuff this project could contain?  
 Just mail me at josh@topswagcode.com  
