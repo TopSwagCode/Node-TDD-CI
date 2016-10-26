@@ -81,7 +81,6 @@ Test
 * Mocha // Test framework https://mochajs.org
 * Chai // Syntax / style http://chaijs.com/
 * Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
-* Looking into https://coveralls.io/ (Mostly just for the badge on github page.)
 
 # Roadmap
 * Add more CI services eg. Jenkins, https://dockbit.com/
@@ -89,6 +88,7 @@ Test
 * Automatic deployments to Azure / AWS / Google App Engine.
 * Create more realistic app with Express.
 * Add some images / gifs for showcasing project.
+* Looking into https://coveralls.io/ (Mostly just for the badge on github page.)
 
 Have any great ideas for stuff this project could contain?  
 Just mail me at josh@topswagcode.com  
