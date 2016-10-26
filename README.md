@@ -72,17 +72,16 @@ Snap CI is unlike the two previous. It has only a graphical user interface. No Y
 
 # Project content
 
-CI:
+CI
 * Circle CI https://circleci.com/
 * Travis CI https://travis-ci.org/ 
 * Snap CI https://snap-ci.com/
 
-Test:
+Test
 * Mocha // Test framework https://mochajs.org
 * Chai // Syntax / style http://chaijs.com/
 * Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
 * Looking into https://coveralls.io/ (Mostly just for the badge on github page.)
-
 
 # Roadmap
 * Add more CI services eg. Jenkins, https://dockbit.com/
@@ -91,10 +90,13 @@ Test:
 * Create more realistic app with Express.
 * Add some images / gifs for showcasing project.
 
-Have any great ideas for stuff this project could contain? \s
-Just mail me at josh@topswagcode.com
+Have any great ideas for stuff this project could contain?  
+Just mail me at josh@topswagcode.com  
 Until next time, stay swag!
 
-Extra swag:
-gifs will be created using: http://screentogif.codeplex.com/
-All code written in: https://code.visualstudio.com/ 
+### Extra swag  
+gifs will be created using:   
+http://screentogif.codeplex.com/
+
+All code written in:  
+https://code.visualstudio.com/ 
