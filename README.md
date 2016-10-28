@@ -105,9 +105,28 @@ My minimal setup for running on Circle CI was simply to create a circle.yml file
 
 ~~~yml
 machine:
+  node:
+    version: 6.0.0
   pre:
     - npm install --global mocha
     - npm install -g istanbul
+test:
+  override:
+    - mocha test --reporter mocha-junit-reporter:
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+~~~
+
+Default Circle CI runs tests described in package.json. I have choosen to overide this basic behavior because I want to use Circle CI to generate a test report. By doing this I get nice test summary tab in Circle CI, which test are failing and with what values. I would also be able to download the entire report in the artifacts tab. Be low here we can see how failing tests looks like in Circle CI.
+
+![failing tests](gitassets/circleci_test.png)
+
+The test xml file, which can be downloaded looks like this:
+~~~
+<testsuite name="getSumPlusOne" timestamp="2016-10-28T09:43:56" tests="2" failures="0" time="0">
+<testcase name="Mocha buildin assert suminator tests getSumPlusOne 2 + 2 + 1 should return 5" time="0" classname="2 + 2 + 1 should return 5"></testcase>
+<testcase name="Mocha buildin assert suminator tests getSumPlusOne 2 + (-3) + 1 should return 0" time="0" classname="2 + (-3) + 1 should return 0"></testcase>
+</testsuite>
 ~~~
 
 ### Travis CI
@@ -137,7 +156,18 @@ script:
 
 ### Snap CI
 
-Snap CI is unlike the two previous. It has only a graphical user interface. No YML nonesense. Simply create stages of commands, which will be your building steps. One cool feature is the options to add manual steps. I haven't tried this, but can see some opportunities. Eg. approving deployments to live setup and other cool stuff. 
+Snap CI is unlike the two previous. It has only a graphical user interface. No YML nonesense. Simply create stages of commands, which will be your building steps. One cool feature is the options to add manual steps. I haven't tried this, but can see some opportunities. Eg. approving deployments to live setup and other cool stuff. Below here we can see my basic pipeline installing my dependencies. My pipeline consists of:
+* Getting my code from github.
+* Installing dependencies.
+* Running tests.
+
+![pipeline](gitassets/snapci_pipeline.png)
+
+Snap CI pipelines consists of "stages", which are the tasks we choose to run. When creating new stages, Snap CI has alot of prebuild which can easily be added and modified. See screenshot below.
+
+![stages](gitassets/snapci_stages.png)
+
+At the moment Snap CI has some pretty basic stuff like npm, grunt and gulp. Furthermore they also have AWS and Heroku deployment stages.
 
 # Project content
 
