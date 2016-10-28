@@ -11,8 +11,8 @@ Suminator.prototype.getSumPlusOne = function(a, b) {
 Suminator.prototype.getSumTimesTwo = function(a, b) {
   var sum = a + b;
 
-  if(sum > 100){
-    return 0;
+  if(sum < 100){
+    return -1337;
   }
 
   return sum * 2;
