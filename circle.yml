@@ -1,4 +1,8 @@
 machine:
+  node:
+    version: 
+      - "5"
+      - "6"
   pre:
     - npm install --global mocha
     - npm install -g istanbul
