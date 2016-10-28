@@ -138,6 +138,7 @@ language: node_js
 
 node_js:
   - "5"
+  - "6"
 
 sudo: true
 
@@ -153,6 +154,8 @@ script:
   - npm test
   - npm run-script coveralls
 ~~~
+
+In travis it is easy to test different releases of Node.js. In my travis build both latests versions of 5 and 6 is getting run.
 
 ### Snap CI
 
