@@ -193,6 +193,7 @@ Test
 * Add some images / gifs for showcasing project.
 * One button deploy. (Eg. from other repo).
 * List of external great resources.
+* table of content.
 
 Have any great ideas for stuff this project could contain?  
 Just mail me at josh@topswagcode.com  
