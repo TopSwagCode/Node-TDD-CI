@@ -13,5 +13,9 @@ install:
   - npm install
 
 script:
+  - ./build.sh
   - npm test
   - npm run-script coveralls
+
+after_success:
+  - ./after.sh
