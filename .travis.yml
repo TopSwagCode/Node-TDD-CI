@@ -15,7 +15,6 @@ install:
   - npm install
 
 script:
-  - ls
   - ./build.sh
   - npm test
   - npm run-script coveralls
