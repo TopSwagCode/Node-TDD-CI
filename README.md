@@ -58,8 +58,8 @@ Creating coverage report for all tests in the tests folder
 $ istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 ~~~
 
-## ESLint NEW!!
-Created a new section for ESLint. Best described on [ESLint](http://eslint.org/) own page:
+## ESLint
+ESLint is best described on [ESLint](http://eslint.org/) own page:
 
 >ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process.
 >
@@ -89,6 +89,7 @@ app.listen(80, () => {
 
 The main difference between the code now and before, is the use of ECMAScript 6. Some var's changed to const and function changed to arrow functions. I would recommend get started using linting, to ensure good code practices and consistent style thoughout a project.
 
+When setting up ESLint it is important to remember config files, to reduced the number of warnings in the project. Specially if the project uses ECMAScript 6. Same goes for testing frameworks. Take a look at .eslintrc.json and .jshintrc for some ispiration.
 
 ## Testing
 We have seen now we can run tests, recursively while keeping watch on them. Now it's time to create some new tests. ChaiJS has 3 styles / flavours out of the box. These 3 are: Should, Expect and Assert. Pick whatever you like the best or whatever makes the most sense your project. For quick overview see the three examples below (Examples taken from ChaiJS own homepage). For more in depth examples goto tests folder and see examples I've made.
