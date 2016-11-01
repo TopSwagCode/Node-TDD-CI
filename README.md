@@ -22,7 +22,8 @@ Well enough jibber jabber. Lets get started.
 
 ## Getting started
 
-To get started and run example test code, simply install mocha and istanbul like so:
+To get started and run example test code, simply install mocha and istanbul like so:  
+(This script will install both globaly, which means you can use them in all project.)
 
 ~~~
 $ npm install --global mocha
@@ -39,6 +40,38 @@ Creating coverage report for all tests in the tests folder
 ~~~
 $ istanbul cover ./node_modules/mocha/bin/_mocha -- tests --recursive
 ~~~
+
+## ESLint NEW!!
+Created a new section for ESLint. Best described on [ESLint](http://eslint.org/) own page:
+
+>ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines. There are code linters for most programming languages, and compilers sometimes incorporate linting into the compilation process.
+>
+>JavaScript, being a dynamic and loosely-typed language, is especially prone to developer error. Without the benefit of a compilation process, JavaScript code is typically executed in order to find syntax or other errors. Linting tools like ESLint allow developers to discover problems with their JavaScript code without executing it.
+
+Getting started with installing and getting linting up and running in your project, it is importan to find out what kind of style, the project should be following. Try giving this artcicle ([10 Best JavaScript Style Guides Including Airbnb and Idiomatic](http://noeticforce.com/best-javascript-style-guide-for-maintainable-code)) a quick read. This should give you a idea about what might be a good way to go.
+
+In Node-TDD-CI I have decided to go with [Airbnb code style](https://github.com/airbnb/javascript) after playing around. I started playing around with [standardjs](http://standardjs.com/). I had to give up after a short while playing around with it. It just wasn't me. The rule "No semicolons" was to far away from the way I am used to code. I want to stress, it's imporant to find a code style you and your team likes to follow. As mentioned I ended up choosing Airbnb. Below we can see how the template hello world express app used to look with Airbnb style rules enabled. ESLint marks "bad" code as errors / warnings depending on the style choosen. It doesn't mean the code didn't work as it were. Just it was bad practice and should be cleaned up.
+
+![ESLint](gitassets/eslint.png)
+
+After cleanup the code looks like:
+~~~javascript
+const version = require('./version.json');
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send(`Hello world from TopSwagCode! We are currently running version: ${version.version}`);
+});
+
+app.listen(80, () => {
+  console.log('Example app listening on port 80!');
+});
+~~~
+
+The main difference between the code now and before, is the use of ECMAScript 6. Some var's changed to const and function changed to arrow functions. I would recommend get started using linting, to ensure good code practices and consistent style thoughout a project.
+
 
 ## Testing
 We have seen now we can run tests, recursively while keeping watch on them. Now it's time to create some new tests. ChaiJS has 3 styles / flavours out of the box. These 3 are: Should, Expect and Assert. Pick whatever you like the best or whatever makes the most sense your project. For quick overview see the three examples below (Examples taken from ChaiJS own homepage). For more in depth examples goto tests folder and see examples I've made.
@@ -137,7 +170,6 @@ Travis is very similar to Circle CI. It also requires a YML file (.travis.yml) t
 language: node_js
 
 node_js:
-  - "5"
   - "6"
 
 sudo: true
