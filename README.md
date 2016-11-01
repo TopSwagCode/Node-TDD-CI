@@ -205,17 +205,21 @@ Snap CI pipelines consists of "stages", which are the tasks we choose to run. Wh
 At the moment Snap CI has some pretty basic stuff like npm, grunt and gulp. Furthermore they also have AWS and Heroku deployment stages.
 
 # Project content
+ESLint
+* [Airbnb](https://github.com/airbnb/javascript)
+* [Standardjs](http://standardjs.com)
+* [ESLint](http://eslint.org/)
 
 CI
-* Circle CI https://circleci.com/
-* Travis CI https://travis-ci.org/ 
-* Snap CI https://snap-ci.com/
+* [Circle CI](https://circleci.com/)
+* [Travis CI](https://travis-ci.org/) 
+* [Snap CI](https://snap-ci.com/)
 
 Test
-* Mocha // Test framework https://mochajs.org
-* Chai // Syntax / style http://chaijs.com/
-* Istanbul // Test coverage reports https://www.npmjs.com/package/istanbul / https://istanbul.js.org/
-* coveralls.io // Online test coverage reports. https://coveralls.io/
+* [Mocha Test framework](https://mochajs.org)
+* [Chai // Syntax / style](http://chaijs.com/)
+* [Istanbul // Test coverage reports](https://istanbul.js.org/)
+* [coveralls.io // Online test coverage reports](https://coveralls.io/)
 
 # Roadmap
 * Add more CI services eg. Jenkins, https://dockbit.com/, https://codeship.com/, https://gitlab.com/
