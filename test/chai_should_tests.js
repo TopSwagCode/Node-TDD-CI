@@ -6,5 +6,6 @@
         foo.should.have.length(3);
         tea.should.have.property('flavors').with.length(3);
 */
-var chai = require('chai');
+const chai = require('chai');
+
 chai.should();

@@ -1,15 +1,15 @@
 function Suminator() {}
 
-Suminator.prototype.getSum = function(a, b) {
+Suminator.prototype.getSum = function (a, b) {
   return a + b;
 };
 
-Suminator.prototype.getSumPlusOne = function(a, b) {
+Suminator.prototype.getSumPlusOne = function (a, b) {
   return a + b + 1;
 };
 
-Suminator.prototype.getSumTimesTwo = function(a, b) {
-  var sum = a + b;
+Suminator.prototype.getSumTimesTwo = function (a, b) {
+  const sum = a + b;
 
   return sum * 2;
 };
