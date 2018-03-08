@@ -7,7 +7,7 @@
         assert.property(tea, 'flavors');
         assert.lengthOf(tea.flavors, 3);
 */
-const assert = require('assert'); // New comment
+const assert = require('assert'); // New comment 2
 const Suminator = require('../libs/suminator');
 
 const suminator = new Suminator();
